@@ -1,0 +1,7 @@
+blog_blog_post:
+    resource: "@BlogBlogBundle/Resources/config/routing/post.yml"
+    prefix:   /post
+
+blog_blog_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BlogBlogBundle:Default:index }
