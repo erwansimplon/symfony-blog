@@ -1,0 +1,15 @@
+site_form_homepage:
+    path:     /
+    defaults: { _controller: SiteFormBundle:Default:index }
+
+site_form_create:
+    path:     /create
+    defaults: { _controller: SiteFormBundle:Default:create }
+
+site_form_update:
+    path:     /update
+    defaults: { _controller: SiteFormBundle:Default:update }
+
+site_form_delete:
+    path:     /delete
+    defaults: { _controller: SiteFormBundle:Default:delete }

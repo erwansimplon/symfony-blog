@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default navbar-center role="navigation"">
+  <div class="container ">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ path('site_general_homepage')}}"><i class="fa fa-home"></i>  Accueil</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{{ path('site_article_homepage') }}"><i class="fa fa-book"></i>  Article<span class="sr-only">(current)</span></a></li>
+        <li><a href="{{ path('site_form_homepage') }}"><i class="fa fa-question-circle" aria-hidden="true"></i>  Forum</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-laptop"></i>  Projet<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://messagerie-erw.esy.es/" target="blank">Réseau social</a></li>
+            <li><a href="http://guillet-erwan.esy.es/" target="blank">Portefolio</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://01aluservice.fr/" target="blank">Site Wordpress</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://github.com/erwansimplon/browser" target="blank">Navigateur</a></li>
+            <li><a href="https://github.com/erwansimplon/OrkKicker" target="blank">Jeu en Javascript</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs"></i>  Espace membre<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ path('fos_user_security_login')}}"><i class="fa fa-sign-in"></i>  Connexion</a></li>
+            <li><a href="{{ path('fos_user_registration_register')}}"><i class="fa fa-user"></i>  Inscription</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{{ path('fos_user_security_logout')}}"><i class="fa fa-power-off"></i>  Deconnexion</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

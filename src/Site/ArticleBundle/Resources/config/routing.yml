@@ -1,0 +1,15 @@
+site_article_homepage:
+    path:     /
+    defaults: { _controller: SiteArticleBundle:Default:index }
+
+site_article_create:
+    path:     /create
+    defaults: { _controller: SiteArticleBundle:Default:create }
+
+site_article_update:
+    path:     /update
+    defaults: { _controller: SiteArticleBundle:Default:update }
+
+site_article_delete:
+    path:     /delete
+    defaults: { _controller: SiteArticleBundle:Default:delete }

@@ -1,0 +1,6 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+    <a href="{{ path('site_form_create')}}">Crée un article</a><br>
+    <a href="{{ path('site_form_update')}}">Modifier mon article</a><br>
+    <a href="{{ path('site_form_delete')}}">Supprimer mon article</a><br>
+{% endblock %}
